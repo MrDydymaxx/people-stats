@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Error = () => (
   <div className='text-center align-middle'>
-    <h1>Error 404 : not found.</h1>
+    <h1>Error 404 : page doesn't exist.</h1>
     <p>
       Click{' '}
       <Link as={Link} to="/">
