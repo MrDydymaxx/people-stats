@@ -65,16 +65,16 @@ const SearchFilter = () => {
   // We return here the form that we will call inside search.js
   return (<div className='d-flex justify-content-center'>
             <Form className="d-flex mt-5" onSubmit={handleSubmit(onSubmit)}>
-                <Form.Select {...register('gender')} aria-label="Default select example">
+                <Form.Select {...register('gender')} aria-label="Default select example" className="bg-dark text-light">
                     <option value='Genre'>Gender</option>
                     <option value='male'>Male</option>
                     <option value='female'>Female</option>
                 </Form.Select>
-                <Form.Control type="text" placeholder='City' {...register('city')}/>
-                <Form.Control type="text" placeholder='State' {...register('state')} />
-                <Form.Control type="text" placeholder='first name' {...register('nameFirst')} />
-                <Form.Control type="text" placeholder='last name' {...register('nameLast')}/>
-                <Button variant="primary" type="submit">
+                <Form.Control type="text" className="bg-dark text-light" placeholder='City' {...register('city')}/>
+                <Form.Control type="text" className="bg-dark text-light" placeholder='State' {...register('state')} />
+                <Form.Control type="text" className="bg-dark text-light" placeholder='first name' {...register('nameFirst')} />
+                <Form.Control type="text" className="bg-dark text-light" placeholder='last name' {...register('nameLast')}/>
+                <Button variant="dark" type="submit">
                     Submit
                 </Button>
             </Form>

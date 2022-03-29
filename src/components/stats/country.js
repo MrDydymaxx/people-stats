@@ -21,6 +21,7 @@ const Gender = () => {
       plotBorderWidth: null,
       plotShadow: false,
       type: 'pie',
+      backgroundColor: '#2F3136',
       options3d: {
         enabled: true,
         alpha: 45

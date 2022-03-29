@@ -78,12 +78,13 @@ const Login = () => {
           <p className="text-center">{errors.password?.message}</p>
         </Alert>
       )}
-      <h1 className="text-center">People-Stats</h1>
+      <h1 className="text-center text-light">People-Stats</h1>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group size="lg" controlId="username">
-          <Form.Label>Pseudo : </Form.Label>
+          <Form.Label class="text-light">Pseudo : </Form.Label>
           <Form.Control
             type="username"
+            className="bg-dark text-light"
             // value={username}
             // onChange={(e) => setUsername(e.target.value)}
             {...register('username', {
@@ -92,9 +93,10 @@ const Login = () => {
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
-          <Form.Label>Password : </Form.Label>
+          <Form.Label class="text-light">Password : </Form.Label>
           <Form.Control
             type="password"
+            className="bg-dark text-light"
             // value={password}
             // onChange={(e) => setPassword(e.target.value)}
             {...register('password', {
@@ -104,7 +106,7 @@ const Login = () => {
         </Form.Group>
         <Button
           size="lg"
-          className="w-100 mt-2"
+          className="w-100 mt-2 bg-dark text-light"
           type="submit"
           disabled={!isValid}
         >

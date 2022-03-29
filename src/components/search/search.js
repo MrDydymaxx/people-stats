@@ -9,7 +9,7 @@ const Search = () => (
       {/* We init the filter */}
     <SearchFilter />
     {/* We init the number of users that we will display in the search result page */}
-    <SearchResult itemsPerPage={8} />
+    <SearchResult itemsPerPage={8}/>
   </Container>
 );
 

@@ -11,32 +11,32 @@ const Items = ({ currentItems }) => (
     {currentItems
       && currentItems.map((item) => (
         <Col key={item.login.username} sm={3} className="mt-3">
-          <Card>
+          <Card className='bg-dark text-light'>
             <Card.Img variant="top" src={item.picture.large} />
-            <Card.Body>
+            <Card.Body class='bg-dark'>
               <Card.Title className="text-center">
                 {item.name.title} {item.name.first} {item.name.last}
               </Card.Title>
             </Card.Body>
-            <ListGroup>
-              <ListGroup.Item>
+            <ListGroup className='bg-dark text-light'>
+              <ListGroup.Item className='bg-dark text-light'>
                 <b>Gender :</b> {item.gender}
               </ListGroup.Item>
-              <ListGroup.Item>
+              <ListGroup.Item className='bg-dark text-light'>
                 <b>Email :</b> <br />
                 {item.email}
               </ListGroup.Item>
-              <ListGroup.Item>
+              <ListGroup.Item className='bg-dark text-light'>
                 <b>Phone :</b> {item.phone}
               </ListGroup.Item>
-              <ListGroup.Item>
+              <ListGroup.Item className='bg-dark text-light'>
                 <b>Cell : </b>
                 {item.cell}
               </ListGroup.Item>
             </ListGroup>
-            <Card.Footer className="d-grid gap-2 text-center">
+            <Card.Footer className="d-grid gap-2 text-center bg-dark text-light">
               <Link to={`/user/${item.login.username}`}>
-                <Button className="cardsButton">Show</Button>
+                <Button className="cardsButton bg-dark">Show</Button>
               </Link>
             </Card.Footer>
           </Card>
@@ -105,15 +105,15 @@ const SearchResult = ({ itemsPerPage }) => {
             marginPagesDisplayed={2}
             pageCount={pageCount}
             previousLabel="< Previous"
-            pageClassName="page-item"
-            pageLinkClassName="page-link"
-            previousClassName="page-item"
-            previousLinkClassName="page-link"
-            nextClassName="page-item"
-            nextLinkClassName="page-link"
+            pageClassName="page-item bg-dark text-light"
+            pageLinkClassName="page-link bg-dark text-light"
+            previousClassName="page-item bg-dark text-light"
+            previousLinkClassName="page-link bg-dark text-light"
+            nextClassName="page-item bg-dark text-light"
+            nextLinkClassName="page-link bg-dark text-light"
             breakLabel="..."
-            breakClassName="page-item"
-            breakLinkClassName="page-link"
+            breakClassName="page-item bg-dark text-light"
+            breakLinkClassName="page-link bg-dark text-light"
             containerClassName="pagination"
             activeClassName="active"
             renderOnZeroPageCount={null}
@@ -135,15 +135,15 @@ const SearchResult = ({ itemsPerPage }) => {
             marginPagesDisplayed={2}
             pageCount={pageCount}
             previousLabel="< Previous"
-            pageClassName="page-item"
-            pageLinkClassName="page-link"
-            previousClassName="page-item"
-            previousLinkClassName="page-link"
-            nextClassName="page-item"
-            nextLinkClassName="page-link"
+            pageClassName="page-item bg-dark text-light"
+            pageLinkClassName="page-link bg-dark text-light"
+            previousClassName="page-item bg-dark text-light"
+            previousLinkClassName="page-link bg-dark text-light"
+            nextClassName="page-item bg-dark text-light"
+            nextLinkClassName="page-link bg-dark text-light"
             breakLabel="..."
-            breakClassName="page-item"
-            breakLinkClassName="page-link"
+            breakClassName="page-item bg-dark text-light"
+            breakLinkClassName="page-link bg-dark text-light"
             containerClassName="pagination"
             activeClassName="active"
             renderOnZeroPageCount={null}
