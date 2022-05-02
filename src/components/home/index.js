@@ -15,8 +15,8 @@ const Accueil = () => {
   const usersNumber = useSelector((state) => state.stats.userNumber);
   return (
     <Container className="mt-3 bg-secondary" fluid>
-      <Row className="mt-3">
-        <Col md={12}>
+      <Row className="mt-3 justify-content-center">
+        <Col md={3}>
           <Card>
             <Card.Header className="text-center bg-dark text-light">Number of registered users</Card.Header>
             <Card.Body className='text-center bg-secondary text-light'>
@@ -47,7 +47,7 @@ const Accueil = () => {
       <Row className="mt-3 mb-5">
         <Col md={12}>
           <Card>
-            <Card.Header className="text-center bg-dark text-light">Maps</Card.Header>
+            <Card.Header className="text-center bg-dark text-light"> World map</Card.Header>
             <Card.Body class="bg-dark">
               <HomeMap users={usersMaps} />
             </Card.Body>

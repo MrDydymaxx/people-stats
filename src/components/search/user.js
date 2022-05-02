@@ -76,7 +76,7 @@ const User = () => {
       <Row className="mt-3 mb-5">
         <Col md={12}>
           <Card>
-            <Card.Header className="text-center bg-dark text-light">Maps</Card.Header>
+            <Card.Header className="text-center bg-dark text-light">World map</Card.Header>
             <Card.Body className='bg-dark text-light'>
               <UserMap user={userResult} />
             </Card.Body>
