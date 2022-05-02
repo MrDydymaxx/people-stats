@@ -81,7 +81,7 @@ const Login = () => {
       <h1 className="text-center text-light">People-Stats</h1>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group size="lg" controlId="username">
-          <Form.Label class="text-light">Pseudo : </Form.Label>
+          <Form.Label className="text-light">Pseudo : </Form.Label>
           <Form.Control
             type="username"
             className="bg-dark text-light"
@@ -93,7 +93,7 @@ const Login = () => {
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
-          <Form.Label class="text-light">Password : </Form.Label>
+          <Form.Label className="text-light">Password : </Form.Label>
           <Form.Control
             type="password"
             className="bg-dark text-light"
